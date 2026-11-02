@@ -1,0 +1,273 @@
+{
+  "numeric_columns": [
+    "months_loan_duration",
+    "amount",
+    "installment_rate",
+    "residence_history",
+    "age",
+    "existing_credits",
+    "dependents"
+  ],
+  "categorical_columns": [
+    "checking_balance",
+    "credit_history",
+    "purpose",
+    "savings_balance",
+    "employment_length",
+    "marital_status",
+    "other_debtors",
+    "property",
+    "installment_plan",
+    "housing",
+    "job",
+    "sex",
+    "telephone",
+    "foreign_worker"
+  ],
+  "categories": {
+    "checking_balance": [
+      "1 - 200 DM",
+      "< 0 DM",
+      "> 200 DM",
+      "unknown"
+    ],
+    "credit_history": [
+      "critical",
+      "delayed",
+      "fully repaid",
+      "fully repaid this bank",
+      "repaid"
+    ],
+    "purpose": [
+      "business",
+      "car (new)",
+      "car (used)",
+      "domestic appliances",
+      "education",
+      "furniture",
+      "others",
+      "radio/tv",
+      "repairs",
+      "retraining"
+    ],
+    "savings_balance": [
+      "101 - 500 DM",
+      "501 - 1000 DM",
+      "< 100 DM",
+      "> 1000 DM",
+      "unknown"
+    ],
+    "employment_length": [
+      "0 - 1 yrs",
+      "1 - 4 yrs",
+      "4 - 7 yrs",
+      "> 7 yrs",
+      "unemployed"
+    ],
+    "marital_status": [
+      "divorced",
+      "married",
+      "single",
+      "unknown"
+    ],
+    "other_debtors": [
+      "co-applicant",
+      "guarantor",
+      "none"
+    ],
+    "property": [
+      "building society savings",
+      "other",
+      "real estate",
+      "unknown/none"
+    ],
+    "installment_plan": [
+      "bank",
+      "none",
+      "stores"
+    ],
+    "housing": [
+      "for free",
+      "own",
+      "rent"
+    ],
+    "job": [
+      "mangement self-employed",
+      "skilled employee",
+      "unemployed non-resident",
+      "unskilled resident"
+    ],
+    "sex": [
+      "female",
+      "male"
+    ],
+    "telephone": [
+      "none",
+      "yes"
+    ],
+    "foreign_worker": [
+      "no",
+      "yes"
+    ]
+  },
+  "category_features": {
+    "checking_balance": {
+      "1 - 200 DM": "checking_balance_1_200_dm",
+      "< 0 DM": "checking_balance_0_dm",
+      "> 200 DM": "checking_balance_200_dm",
+      "unknown": "checking_balance_unknown"
+    },
+    "credit_history": {
+      "critical": "credit_history_critical",
+      "delayed": "credit_history_delayed",
+      "fully repaid": "credit_history_fully_repaid",
+      "fully repaid this bank": "credit_history_fully_repaid_this_bank",
+      "repaid": "credit_history_repaid"
+    },
+    "purpose": {
+      "business": "purpose_business",
+      "car (new)": "purpose_car_new",
+      "car (used)": "purpose_car_used",
+      "domestic appliances": "purpose_domestic_appliances",
+      "education": "purpose_education",
+      "furniture": "purpose_furniture",
+      "others": "purpose_others",
+      "radio/tv": "purpose_radio_tv",
+      "repairs": "purpose_repairs",
+      "retraining": "purpose_retraining"
+    },
+    "savings_balance": {
+      "101 - 500 DM": "savings_balance_101_500_dm",
+      "501 - 1000 DM": "savings_balance_501_1000_dm",
+      "< 100 DM": "savings_balance_100_dm",
+      "> 1000 DM": "savings_balance_1000_dm",
+      "unknown": "savings_balance_unknown"
+    },
+    "employment_length": {
+      "0 - 1 yrs": "employment_length_0_1_yrs",
+      "1 - 4 yrs": "employment_length_1_4_yrs",
+      "4 - 7 yrs": "employment_length_4_7_yrs",
+      "> 7 yrs": "employment_length_7_yrs",
+      "unemployed": "employment_length_unemployed"
+    },
+    "marital_status": {
+      "divorced": "marital_status_divorced",
+      "married": "marital_status_married",
+      "single": "marital_status_single",
+      "unknown": "marital_status_unknown"
+    },
+    "other_debtors": {
+      "co-applicant": "other_debtors_co_applicant",
+      "guarantor": "other_debtors_guarantor",
+      "none": "other_debtors_none"
+    },
+    "property": {
+      "building society savings": "property_building_society_savings",
+      "other": "property_other",
+      "real estate": "property_real_estate",
+      "unknown/none": "property_unknown_none"
+    },
+    "installment_plan": {
+      "bank": "installment_plan_bank",
+      "none": "installment_plan_none",
+      "stores": "installment_plan_stores"
+    },
+    "housing": {
+      "for free": "housing_for_free",
+      "own": "housing_own",
+      "rent": "housing_rent"
+    },
+    "job": {
+      "mangement self-employed": "job_mangement_self_employed",
+      "skilled employee": "job_skilled_employee",
+      "unemployed non-resident": "job_unemployed_non_resident",
+      "unskilled resident": "job_unskilled_resident"
+    },
+    "sex": {
+      "female": "sex_female",
+      "male": "sex_male"
+    },
+    "telephone": {
+      "none": "telephone_none",
+      "yes": "telephone_yes"
+    },
+    "foreign_worker": {
+      "no": "foreign_worker_no",
+      "yes": "foreign_worker_yes"
+    }
+  },
+  "numeric_medians": {
+    "months_loan_duration": 18.0,
+    "amount": 2319.5,
+    "installment_rate": 3.0,
+    "residence_history": 3.0,
+    "age": 33.0,
+    "existing_credits": 1.0,
+    "dependents": 1.0
+  },
+  "feature_names": [
+    "months_loan_duration",
+    "amount",
+    "installment_rate",
+    "residence_history",
+    "age",
+    "existing_credits",
+    "dependents",
+    "checking_balance_1_200_dm",
+    "checking_balance_0_dm",
+    "checking_balance_200_dm",
+    "checking_balance_unknown",
+    "credit_history_critical",
+    "credit_history_delayed",
+    "credit_history_fully_repaid",
+    "credit_history_fully_repaid_this_bank",
+    "credit_history_repaid",
+    "purpose_business",
+    "purpose_car_new",
+    "purpose_car_used",
+    "purpose_domestic_appliances",
+    "purpose_education",
+    "purpose_furniture",
+    "purpose_others",
+    "purpose_radio_tv",
+    "purpose_repairs",
+    "purpose_retraining",
+    "savings_balance_101_500_dm",
+    "savings_balance_501_1000_dm",
+    "savings_balance_100_dm",
+    "savings_balance_1000_dm",
+    "savings_balance_unknown",
+    "employment_length_0_1_yrs",
+    "employment_length_1_4_yrs",
+    "employment_length_4_7_yrs",
+    "employment_length_7_yrs",
+    "employment_length_unemployed",
+    "marital_status_divorced",
+    "marital_status_married",
+    "marital_status_single",
+    "marital_status_unknown",
+    "other_debtors_co_applicant",
+    "other_debtors_guarantor",
+    "other_debtors_none",
+    "property_building_society_savings",
+    "property_other",
+    "property_real_estate",
+    "property_unknown_none",
+    "installment_plan_bank",
+    "installment_plan_none",
+    "installment_plan_stores",
+    "housing_for_free",
+    "housing_own",
+    "housing_rent",
+    "job_mangement_self_employed",
+    "job_skilled_employee",
+    "job_unemployed_non_resident",
+    "job_unskilled_resident",
+    "sex_female",
+    "sex_male",
+    "telephone_none",
+    "telephone_yes",
+    "foreign_worker_no",
+    "foreign_worker_yes"
+  ]
+}
